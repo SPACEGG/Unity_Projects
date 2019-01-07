@@ -6,7 +6,7 @@ MonoImporter:
   defaultReferences:
   - backgroundUp: {fileID: 21300000, guid: ab505449cf0755d4f96839e767c94e18, type: 3}
   - backgroundDown: {fileID: 21300000, guid: 6950a72033439084d8b4cf9dd5f015c2, type: 3}
-  - playerSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  - playerSprite: {fileID: 21300000, guid: 9ae3b001160b4b341b54124dc4449c4e, type: 3}
   - clip: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}

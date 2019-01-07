@@ -13,6 +13,10 @@ public class SongScript : ScriptableObject
     public int BPM;
     public new string name;
     public Sprite backgroundUp, backgroundDown, playerSprite;
-    public Color barOnColor, barOffColor, barTextColor, backTextColor;
+    public Color barOnColor = Color.black;
+    public Color barOffColor = Color.black;
+    public Color barTextColor = Color.black;
+    public Color backTextColor = Color.black;
+    public Color playerCoreColor = Color.black;
     public AudioClip clip;
 }

@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     #region 변수들
     public Text barLeftText, barRightText, backText;
     public Image backgroundUp, backgroundDown, barOnColor, barOffColor;
-    public SpriteRenderer playerSprite;
+    public SpriteRenderer playerSprite, playerCoreColor;
 
     public static GameState state;
     #endregion
@@ -95,7 +95,19 @@ public class GameManager : MonoBehaviour
 
     void CheckState()
     {
-        //state에 걸맞는 상황 제공
+        switch(state){
+            case GameState.GameClear:
+                break;
+
+            case GameState.GameClearWithSong:
+                break;
+
+            case GameState.GameOver:
+                break;
+
+            case GameState.Playing:
+                break;
+        }
     }
 
     #region Cycle

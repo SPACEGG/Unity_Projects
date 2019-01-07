@@ -16,9 +16,10 @@ MonoBehaviour:
   name: Aftermath
   backgroundUp: {fileID: 21300000, guid: 8067a19f634dc324b97bc7d099547dd4, type: 3}
   backgroundDown: {fileID: 21300000, guid: 6950a72033439084d8b4cf9dd5f015c2, type: 3}
-  playerSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  playerSprite: {fileID: 21300000, guid: 9ae3b001160b4b341b54124dc4449c4e, type: 3}
   barOnColor: {r: 1, g: 0.23113209, b: 0.23113209, a: 1}
   barOffColor: {r: 0.7830189, g: 0.2622375, b: 0.2622375, a: 1}
   barTextColor: {r: 1, g: 1, b: 1, a: 1}
   backTextColor: {r: 0.19607845, g: 0.19607845, b: 0.19607845, a: 1}
+  playerCoreColor: {r: 0, g: 0, b: 0, a: 1}
   clip: {fileID: 8300000, guid: 215c12ca2a8829d479d4a6545b345406, type: 3}

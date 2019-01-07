@@ -11,12 +11,14 @@ public class SongManager : GameManager
 {
     public SongScript songInfo;
     public AudioSource speaker;
+    public static readonly float clearRequiredTime = 60f;
 
     Image progress;
     [HideInInspector]
     public static float playTime;
     int BPM;
 
+    //테스트 코루틴, 나중에 저 밑에 있는 SincMatch쓸거임
     IEnumerator SincToAudio()
     {
         //audio.time * audio.clip.frequency = audio.timeSample(오디오 샘플값을 시간대신 사용한다)
@@ -37,7 +39,7 @@ public class SongManager : GameManager
     }
 
     /// <summary>
-    /// 호출 될 때마다 비트에 맞춰 바 진행, GameManager꺼를 하이딩 하려다 말았음
+    /// 호출 될 때마다 비트에 맞춰 바 진행, GameManager꺼를 하이딩 하려다 오버로딩됨
     /// </summary>
     IEnumerator BarProgressChange(Image img, float previous, float current)
     {
@@ -80,6 +82,7 @@ public class SongManager : GameManager
         barLeftText.color = songInfo.barTextColor;
         barRightText.color = songInfo.barTextColor;
         backText.color = songInfo.backTextColor;
+        playerCoreColor.color = songInfo.playerCoreColor;
         playerSprite.sprite = songInfo.playerSprite;
         #endregion
 
