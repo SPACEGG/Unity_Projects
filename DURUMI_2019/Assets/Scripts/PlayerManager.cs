@@ -67,6 +67,7 @@ public class PlayerManager : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, minPos.y + coreSize.y, maxPos.y - coreSize.y);
         return pos;
     }
+    
     #endregion
 
     private void Update()

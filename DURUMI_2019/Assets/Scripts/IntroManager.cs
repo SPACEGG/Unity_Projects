@@ -15,7 +15,7 @@ public class IntroManager : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(GameManager.LoadSceneIntro(sceneName: "Main", loadingImg: progressBar));
+        StartCoroutine(GameSystem.Instance.LoadSceneIntro(sceneName: "Main", loadingImg: progressBar));
     }
 
 

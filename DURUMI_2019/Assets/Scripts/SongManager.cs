@@ -106,8 +106,9 @@ public class SongManager : GameManager
         StartCoroutine(SincToAudio());
     }
 
-    private void Update()
+    private new void Update()
     {
+        base.Update();
         playTime = speaker.time;
         if(playTime == speaker.clip.length)
         {

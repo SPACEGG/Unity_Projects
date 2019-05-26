@@ -14,9 +14,15 @@ public class ButtonManager : MonoBehaviour
         Debug.Log("설정창");
     }
 
+    public void PackSelect()
+    {
+
+    }
+
     public void Quit()
     {
         Debug.Log("게임종료!");
+        Application.Quit();
     }
 
 }
